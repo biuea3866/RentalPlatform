@@ -11,7 +11,6 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
-
     <aop:aspectj-autoproxy/>
     <mvc:annotation-driven>
         <mvc:message-converters>
@@ -30,35 +29,34 @@
                 </property>
             </bean>
         </mvc:message-converters>
-<!--        <mvc:argument-resolvers>-->
-<!--            <bean class="Security.AuthUserHandlerMethodArgumentResolver"/>-->
-<!--        </mvc:argument-resolvers>-->
+        <mvc:argument-resolvers>
+            <bean class="Security.AuthUserHandlerMethodArgumentResolver"/>
+        </mvc:argument-resolvers>
     </mvc:annotation-driven>
-<!--    <mvc:interceptors>-->
-<!--        <mvc:interceptor>-->
-<!--            <mvc:mapping path="/auth/loginCheck"/>-->
-<!--            <bean class="Security.LoginInterceptor"/>-->
-<!--        </mvc:interceptor>-->
-<!--        <mvc:interceptor>-->
-<!--            <mvc:mapping path="/auth/logout"/>-->
-<!--            <bean class="Security.LogoutInterceptor"/>-->
-<!--        </mvc:interceptor>-->
-<!--        <mvc:interceptor>-->
-<!--            <mvc:mapping path="/**"/>-->
-<!--            <mvc:exclude-mapping path="/auth/loginCheck"/>-->
-<!--            <mvc:exclude-mapping path="/auth/logout"/>-->
-<!--            <mvc:exclude-mapping path="/static/**"/>-->
-<!--            <bean class="Security.AuthInterceptor"/>-->
-<!--        </mvc:interceptor>-->
-<!--    </mvc:interceptors>-->
-    <mvc:resources mapping="/resources/**" location="/resources/"/>
+        <mvc:interceptors>
+            <mvc:interceptor>
+                <mvc:mapping path="/auth/loginCheck"/>
+                <bean class="Security.LoginInterceptor"/>
+            </mvc:interceptor>
+            <mvc:interceptor>
+                <mvc:mapping path="/auth/logout"/>
+                <bean class="Security.LogoutInterceptor"/>
+            </mvc:interceptor>
+            <mvc:interceptor>
+                <mvc:mapping path="/**"/>
+                <mvc:exclude-mapping path="/auth/loginCheck"/>
+                <mvc:exclude-mapping path="/auth/logout"/>
+                <mvc:exclude-mapping path="/static/**"/>
+                <bean class="Security.AuthInterceptor"/>
+            </mvc:interceptor>
+        </mvc:interceptors>
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
         <property name="prefix" value="/WEB-INF/views/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
     <mvc:default-servlet-handler/>
-
     <context:annotation-config/>
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
     <context:component-scan base-package="Controller, Exception, Lib"/>
 </beans>

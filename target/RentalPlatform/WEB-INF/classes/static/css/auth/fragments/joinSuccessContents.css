@@ -1,0 +1,15 @@
+#join_success_contents {
+    float: left;
+    width: 100%;
+    padding-top: 200px;
+    text-align: center;
+}
+
+#join_success_contents_header {
+    text-align: left;
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 25px;
+    color: #155454;
+    font-weight: bold;
+}

@@ -1,0 +1,67 @@
+#header {
+    width: 100%;
+    height: 130px;
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+#header_title {
+    float: left;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+#header_title > a {
+    color: #008080;
+}
+
+#header_nav {
+    float: left;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+#header_nav_area {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#header_nav ul {
+    float: left;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#header_nav ul > li {
+    float: left;
+    width: 50px;
+    height: 80px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#header_nav ul > li > a {
+    color: #000000;
+}
+
+.header_nav_icon_area {
+    width: 50px;
+    height: 40px;
+}
+
+.header_nav_text_area {
+    font-size: 15px;
+}
+
+ion-icon {
+    width: 40px;
+    height: 40px;
+}

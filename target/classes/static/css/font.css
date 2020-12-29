@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Nanum_R;
+    src: url('/resources/static/font/NanumGothic-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nanum_EB;
+    src: url('/resources/static/font/NanumGothic-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Nanum_B;
+    src: url('/resources/static/font/NanumGothic-Bold.ttf');
+}
+
+@font-face {
+    font-family: Anton;
+    src: url('/resources/static/font/Anton-Regular.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu_B;
+    src: url('/resources/static/font/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu_BI;
+    src: url('/resources/static/font/Ubuntu-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu_I;
+    src: url('/resources/static/font/Ubuntu-Italic.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu_L;
+    src: url('/resources/static/font/Ubuntu-Light.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu_LI;
+    src: url('/resources/static/font/Ubuntu-LightItalic.ttf');
+}
+
+
+@font-face {
+    font-family: Ubuntu_M;
+    src: url('/resources/static/font/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu_MI;
+    src: url('/resources/static/font/Ubuntu-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu_R;
+    src: url('/resources/static/font/Ubuntu-Regular.ttf');
+}
+
+.Nanum_R {
+    font-family: 'Nanum_R';
+}
+
+.Nanum_EB {
+    font-family: 'Nanum_EB';
+}
+
+.Nanum_B {
+    font-family: 'Nanum_B';
+}
+
+.Anton {
+    font-family: 'Anton';
+}
+
+.Ubuntu_B {
+    font-family: 'Ubuntu_B';
+}
+
+.Ubuntu_BI {
+    font-family: 'Ubuntu_BI';
+}
+
+.Ubuntu_I {
+    font-family: 'Ubuntu_I';
+}
+
+.Ubuntu_L {
+    font-family: 'Ubuntu_L';
+}
+
+.Ubuntu_LI {
+    font-family: 'Ubuntu_LI';
+}
+
+.Ubuntu_M {
+    font-family: 'Ubuntu_M';
+}
+
+.Ubuntu_MI {
+    font-family: 'Ubuntu_MI';
+}
+
+.Ubuntu_R {
+    font-family: 'Ubuntu_R';
+}
