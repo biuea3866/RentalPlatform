@@ -12,7 +12,7 @@
 
 <html>
     <head>
-        <title>Life Sports</title>
+        <title>Rental Platform</title>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/static/css/auth/join.css"/>
     </head>
     <body>

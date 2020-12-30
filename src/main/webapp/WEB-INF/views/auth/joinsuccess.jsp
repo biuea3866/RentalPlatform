@@ -12,7 +12,7 @@
 
 <html>
     <head>
-        <title>Title</title>
+        <title>Rental Platform</title>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/static/css/auth/joinsuccess.css"/>
     </head>
     <body>

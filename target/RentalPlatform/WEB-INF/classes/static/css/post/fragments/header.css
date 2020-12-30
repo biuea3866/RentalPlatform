@@ -1,0 +1,84 @@
+#post_header {
+    width: 70%;
+    margin-top: 200px;
+    display: inline-block;
+}
+
+#post_header_search {
+    float: left;
+    width: 60%;
+}
+
+#searchBar_area {
+    float: left;
+    width: 60%;
+}
+
+#searchBar {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+#searchBar:focus {
+    border-color: #008080;
+    box-shadow: 0 0 8px 0 #008080;
+}
+
+#searchButton {
+    width: 60px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #008080;
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+#searchButton:hover {
+    width: 60px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #469594;
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+#searchButton_area {
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+
+#post_header_write {
+    float: left;
+    width: 40%;
+    text-align: right;
+}
+
+#postWrite {
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #008080;
+    border-radius: 20px;
+    color: #008080;
+    font-weight: bold;
+    outline: none;
+}
+
+#postWrite:hover {
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #469594;
+    border-radius: 20px;
+    color: #469594;
+    font-weight: bold;
+    outline: none;
+}

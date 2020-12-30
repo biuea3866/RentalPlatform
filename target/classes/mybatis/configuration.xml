@@ -3,8 +3,10 @@
 <configuration>
     <typeAliases>
         <typeAlias type="VO.auth.UserVO" alias="uservo" />
+        <typeAlias type="VO.post.PostVO" alias="postvo" />
     </typeAliases>
     <mappers>
         <mapper resource="mybatis/mappers/user.xml" />
+        <mapper resource="mybatis/mappers/post.xml" />
     </mappers>
 </configuration>

@@ -11,7 +11,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html>
     <head>
-        <title>Life Sports</title>
+        <title>Rental Platform</title>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/static/css/auth/myPage.css"/>
     </head>
     <body>

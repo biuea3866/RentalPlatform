@@ -30,12 +30,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="${pageContext.request.contextPath}/posts/">
                         <div class="header_nav_icon_area">
                             <ion-icon src="${pageContext.request.contextPath}/resources/static/img/clipboard-outline.svg"></ion-icon>
                         </div>
                         <span class="header_nav_text_area Anton">
-                            Board
+                            Post
                         </span>
                     </a>
                 </li>

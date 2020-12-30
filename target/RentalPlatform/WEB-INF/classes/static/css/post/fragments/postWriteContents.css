@@ -1,0 +1,16 @@
+#postWrite_Contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 250px;
+}
+
+#postWrite_contents_header {
+    color: #155454;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#postWrite_type_area {
+    width: 200px;
+}
