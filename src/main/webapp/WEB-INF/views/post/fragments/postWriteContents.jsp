@@ -47,10 +47,7 @@
                 </div>
             </div>
         </div>
-<%--        <c:set var="" value="" />--%>
-<%--        <c:if test="${}">--%>
-<%--            <div id="postWrite_upload_area"></div>--%>
-<%--        </c:if>--%>
+<%--        <div id="postWrite_upload_area"></div>--%>
         <div id="postWrite_title_area"></div>
         <div id="postWrite_contents_area"></div>
         <div id="postWrite_map_area"></div>
