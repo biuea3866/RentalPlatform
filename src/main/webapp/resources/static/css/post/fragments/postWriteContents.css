@@ -1,5 +1,9 @@
+input[type=text]{
+    width: 100%;
+}
+
 #postWrite_Contents {
-    width: 80%;
+    width: 60%;
     display: inline-block;
     margin-top: 250px;
 }
@@ -14,4 +18,64 @@
 #postWrite_type_area {
     width: 200px;
     margin-top: 20px;
+}
+
+#postWrite_title_area {
+    text-align: left;
+}
+
+#postWrite_contents_area {
+    text-align: left;
+    height: 400px;
+}
+
+#postContents {
+    width: 100%;
+    height: 100%;
+}
+
+#postWrite_money_area {
+    text-align: left;
+    width: 100%;
+}
+
+#postWrite_date_area {
+    text-align: left;
+    width: 100%;
+}
+
+#rentalFee {
+    width: 200px;
+}
+
+#rentalDate {
+    width: 200px;
+}
+
+#postWrite_submit_area {
+    text-align: right;
+}
+
+#postButton {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #008080;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+#postButton:hover {
+    background-color: #469594;
+}
+
+#postWrite_upload_area {
+    margin-top: 20px;
+}
+
+.uploadImage {
+    float: left;
+    height: 40px;
+    outline: none;
 }

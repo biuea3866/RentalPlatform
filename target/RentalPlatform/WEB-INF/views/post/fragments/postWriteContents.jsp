@@ -19,9 +19,17 @@
     <form
         id="postWriteForm"
         name="postWriteForm"
-        action=""
-        onsubmit=""
+        method="post"
+        action="${pageContext.servletContext.contextPath}/posts/postWrite"
+        onsubmit="return postWrite()"
+        enctype="multipart/form-data"
     >
+        <input
+            type="hidden"
+            id="writer"
+            name="writer"
+            value="${ authUser.nickName }"
+        />
         <div id="postWrite_type_area">
             <div class="radio-items">
                 <div class="col-6">
@@ -29,7 +37,7 @@
                         id="borrow"
                         class="only-sr checked"
                         type="radio"
-                        name="boardType"
+                        name="postType"
                         value="빌려드려요"
                         checked
                     >
@@ -40,7 +48,7 @@
                         id="want"
                         class="only-sr"
                         type="radio"
-                        name="boardType"
+                        name="postType"
                         value="빌려주세요"
                     >
                     <label for="want">빌려주세요</label>
@@ -48,10 +56,39 @@
             </div>
         </div>
         <div id="postWrite_upload_area"></div>
-        <div id="postWrite_title_area"></div>
-        <div id="postWrite_contents_area"></div>
+        <div id="postWrite_money_area"></div>
+        <div id="postWrite_date_area"></div>
+        <div id="postWrite_title_area">
+            <input
+                id="postTitle"
+                class="styled_input"
+                name="postTitle"
+                type="text"
+                placeholder="게시글 제목"
+            />
+        </div>
+        <div id="postWrite_contents_area">
+            <input
+                id="postContents"
+                class="styled_input"
+                name="postContents"
+                type="text"
+                placeholder="게시글 내용"
+                multiple
+            />
+        </div>
         <div id="postWrite_map_area"></div>
-        <div id="postWrite_submit_area"></div>
+        <div id="postWrite_error">
+            <span id="error"></span>
+        </div>
+        <div id="postWrite_submit_area">
+            <input
+                id="postButton"
+                name="postButton"
+                type="submit"
+                value="게시글 등록"
+            />
+        </div>
     </form>
 </div>
 <script src="${pageContext.request.contextPath}/resources/static/js/post/post.js"></script>

@@ -31,13 +31,14 @@
         </div>
     </div>
     <div id="post_header_write">
-        <input
+        <div
             id="postWrite"
             name="postWrite"
-            type="button"
-            value="글쓰기"
-            onclick="postWrite()"
-        />
+        >
+            <a href="${pageContext.request.contextPath}/posts/postWrite">
+                글쓰기
+            </a>
+        </div>
     </div>
 </div>
 <script src="${pageContext.request.contextPath}/resources/static/js/post/post.js"></script>

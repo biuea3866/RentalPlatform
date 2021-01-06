@@ -6,7 +6,7 @@
 
 #post_header_search {
     float: left;
-    width: 60%;
+    width: 70%;
 }
 
 #searchBar_area {
@@ -56,29 +56,36 @@
 }
 
 #post_header_write {
-    float: left;
-    width: 40%;
-    text-align: right;
+    float: right;
+    width: 30%;
+    text-align: center;
 }
 
 #postWrite {
-    width: 80px;
+    float: right;
+    width: 100px;
     height: 40px;
+    line-height: 40px;
     background-color: #ffffff;
     border: 2px solid #008080;
     border-radius: 20px;
     color: #008080;
     font-weight: bold;
     outline: none;
+    cursor: pointer;
 }
 
 #postWrite:hover {
-    width: 80px;
-    height: 40px;
     background-color: #ffffff;
     border: 2px solid #469594;
     border-radius: 20px;
     color: #469594;
-    font-weight: bold;
-    outline: none;
+}
+
+#postWrite > a {
+    color: #008080;
+}
+
+#postWrite > a:hover {
+    color: #469594;
 }
