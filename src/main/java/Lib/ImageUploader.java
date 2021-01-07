@@ -3,17 +3,16 @@ package Lib;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.FileOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
 
 public class ImageUploader {
-    private static final String savePath = "resources/upload";
+    private static final String basePath = "/home/biuea/Desktop/RentalPlatform/src/main/webapp/";
     private static final String prefixUrl = "resources/upload/";
 
     public String ImageUploader(
-        MultipartFile multipartFile,
-        HttpServletRequest request
+        MultipartFile multipartFile
     ) {
         String url = null;
 
@@ -31,7 +30,7 @@ public class ImageUploader {
                 System.out.println("size : " + size);
                 System.out.println("saveFileName : " + saveFileName);
 
-                writeFile(multipartFile, saveFileName, request);
+                writeFile(multipartFile, saveFileName);
 
                 url = prefixUrl + saveFileName;
 
@@ -59,16 +58,12 @@ public class ImageUploader {
 
     private void writeFile(
         MultipartFile multipartFile,
-        String saveFileName,
-        HttpServletRequest request
+        String saveFileName
     ) throws IOException {
-        byte[] data = multipartFile.getBytes();
-        FileOutputStream fos = new FileOutputStream(
-            request.getServletContext()
-                   .getRealPath(savePath + "/" + saveFileName)
-        );
+        File file = new File(basePath + prefixUrl + saveFileName);
 
-        fos.write(data);
-        fos.close();
+        System.out.println("파일 저장 경로 : " + "/home/biuea/Desktop/RentalPlatform/src/main/webapp/");
+
+        multipartFile.transferTo(file);
     }
 }

@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.HttpServletRequest;
-
 @Controller
 @RequestMapping("/posts")
 public class PostController {
@@ -34,11 +32,10 @@ public class PostController {
         PostVO postVO,
         @RequestParam("uploadImage1") MultipartFile image1,
         @RequestParam("uploadImage2") MultipartFile image2,
-        @RequestParam("uploadImage3") MultipartFile image3,
-        HttpServletRequest request
+        @RequestParam("uploadImage3") MultipartFile image3
     ) {
-        postService.writePost(postVO, image1, image2, image3, request);
+        postService.writePost(postVO, image1, image2, image3);
 
-        return "redirect:/post/post";
+        return "post/post";
     }
 }

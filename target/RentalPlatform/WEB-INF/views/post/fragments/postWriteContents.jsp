@@ -11,6 +11,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/static/css/post/fragments/postWriteContents.css"/>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/static/css/style.css"/>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9c3ace8147d5910822610486156e45f9&libraries=services"></script>
 <div id="postWrite_Contents">
     <div id="postWrite_contents_header">
         오늘은 어떤 물건들을<br/>

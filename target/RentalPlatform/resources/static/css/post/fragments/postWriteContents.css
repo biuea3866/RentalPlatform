@@ -52,6 +52,11 @@ input[type=text]{
     width: 200px;
 }
 
+
+#postWrite_error {
+    margin-top: 25px;
+}
+
 #postWrite_submit_area {
     text-align: right;
 }

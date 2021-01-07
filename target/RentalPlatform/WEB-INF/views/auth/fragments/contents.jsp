@@ -92,7 +92,7 @@
                 <tr>
                     <td class="half_left_line">
                         <div class="table_text">
-                            내 포인트
+                            회원정보수정
                         </div>
                         <span class="shortcut_area">
                     <a href="#">
@@ -136,7 +136,7 @@
                 <tr>
                     <td class="full_line" colspan="2">
                         <div class="table_text">
-                            대관 내역
+                            대여 내역
                         </div>
                         <div class="shortcut_area">
                             <a href="#">
