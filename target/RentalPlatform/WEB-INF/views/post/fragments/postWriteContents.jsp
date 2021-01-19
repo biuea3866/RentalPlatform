@@ -78,7 +78,10 @@
                 multiple
             />
         </div>
-        <div id="postWrite_map_area"></div>
+        <div id="postWrite_map_wrap">
+            <div id="postWrite_map_area"></div>
+            <div id="postWrite_map_searchBar"></div>
+        </div>
         <div id="postWrite_error">
             <span id="error"></span>
         </div>

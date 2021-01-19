@@ -52,12 +52,67 @@ input[type=text]{
     width: 200px;
 }
 
+#postWrite_map_wrap, #postWrite_map_wrap * {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
 
-#postWrite_error {
-    margin-top: 25px;
+#postWrite_map_wrap {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+#postWrite_map_searchBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    margin: 10px 0 30px 10px;
+    padding: 5px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+#search {
+    float: left;
+    width: 80%;
+    height: 30px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+#search:focus {
+    border-color: #008080;
+    box-shadow: 0 0 8px 0 #008080;
+}
+
+#searchButton {
+    float: left;
+    width: 20%;
+    height: 30px;
+    outline: none;
+    border-radius: 4px;
+    background-color: #155454;
+    color: #ffffff;
+    border: none;
+}
+
+#searchButton:hover {
+    background-color: #008080;
+    color: #ffffff;
 }
 
 #postWrite_submit_area {
+    margin-top: 25px;
     text-align: right;
 }
 
